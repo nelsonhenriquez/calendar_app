@@ -11,6 +11,10 @@ public class Main {
 
         Calendar calendar = new Calendar(readFromFile());
 
+        if (new File("output.txt").isFile()) {
+            System.out.println("File detected!");
+        }
+
 
         while (running) {
             System.out.println("Welcome to Calendar App\n\n" +
