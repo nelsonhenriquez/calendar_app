@@ -101,7 +101,7 @@ public class Main {
         ArrayList<CalendarItem> temp = new ArrayList<CalendarItem>();
 
         try {
-            reader = new BufferedReader(new FileReader("output.txt"));
+            reader = new BufferedReader(new FileReader("output.csv"));
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.split(",")[0].equals("Reminder")) {
@@ -136,7 +136,7 @@ public class Main {
 
         try {
             // Create a BufferedWriter object with FileWriter
-            writer = new BufferedWriter(new FileWriter("output.txt"));
+            writer = new BufferedWriter(new FileWriter("output.csv"));
 
             for (String s : itemStrings) {
                 writer.write(s);
